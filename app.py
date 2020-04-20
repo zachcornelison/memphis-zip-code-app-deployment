@@ -1,11 +1,12 @@
 import dash
-import dash_table
-from dash.dependencies import Input, Output
 import dash_core_components as dcc
 import dash_html_components as html
+import dash_table
+from dash.dependencies import Input, Output
 import plotly
 import pandas as pd
 import plotly.graph_objs as go
+
 
 ########### Initiate the app
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
