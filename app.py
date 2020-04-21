@@ -13,7 +13,7 @@ import plotly.graph_objs as go
 external_stylesheets = ['https://codepen.io/chriddyp/pen/bWLwgP.css']
 app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 server = app.server
-app.title='memphis'
+app.title='Digital Divide'
 
 ########### Set up the layout
 df = pd.read_csv('zipcode-data.csv')
