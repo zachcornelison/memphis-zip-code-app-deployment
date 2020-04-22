@@ -52,6 +52,13 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                     'textAlign': 'center',
                     'color': colors['text']
             }),
+            html.Label([html.A('Zip code data source', href='https://www.memphisrealtysearch.com/memphis-zip-code-map/', target="_blank")],
+                style={
+                    'font-size': 10,
+                    'font-family':'Verdana',
+                    'textAlign': 'center',
+                    'color': colors['text']
+            }),
             html.Label([html.A('Click here to view the data', href='https://data.census.gov/cedsci/table?q=b28002&tid=ACSDT1Y2018.B28002&vintage=2018&hidePreview=true&moe=false', target="_blank")],
                 style={
                     'font-size': 10,
@@ -152,7 +159,7 @@ def update_output(value):
     [dash.dependencies.Input('demo-dropdown', 'value')])
 def update_image_src(selector):
     filtered_data = df.loc[df['Zip Code'].isin(selector), 
-                            ['Area Name', 'percent no internet', 'Zip Code']]
+                            ['Short Name', '% Lacking Broadband Internet', 'Zip Code']]
     figure = {
         'data': [{'x': [area_name], 
                   'y': [percent], 
@@ -181,7 +188,7 @@ def update_image_src(selector):
     [dash.dependencies.Input('demo-dropdown', 'value')])
 def update_image_src(selector):
     filtered_data = df.loc[df['Zip Code'].isin(selector), 
-                            ['Area Name', 'Mean Income Past 12 Months', 'Zip Code']]
+                            ['Short Name', 'Mean Income Past 12 Months', 'Zip Code']]
     figure = {
         'data': [{'x': [area_name], 
                   'y': [income], 
