@@ -1,12 +1,35 @@
-Zip Code,Area Name,percent no internet,Mean Income Past 12 Months
-38126,South Forum - Washington Heights,0.8308,26346
-38106,South Memphis,0.8223,31403
-38108,Hollywood - Hyde Park - Nutbush,0.7356,31278
-38114,Rozelle - Castalia - Orange Mound - Fairhills - Fairlawn,0.7064,38428
-38105,Uptown - Pinch District,0.6982,36980
-38127,Frayser,0.6283,37886
-38109,Coro Lake - White Haven,0.6271,42657
-38107,North Memphis - Snowden - New Chicago,0.5746,40915
-38116,Whitehaven,0.5745,52128
-38118,Oakville - Parkway Village,0.5271,42729
-38115,Hickory Ridge,0.5175,41984
+Zip Code,Area Name,Short Name,% Lacking Broadband Internet,Mean Income Past 12 Months
+38126,South Forum - Washington Heights,South Forum,83.08,26346
+38106,South Memphis,South Memphis,82.23,31403
+38108,Hollywood - Hyde Park - Nutbush,Hyde Park,73.56,31278
+38114,Rozelle - Castalia - Orange Mound - Fairhills - Fairlawn,Orange Mound,70.64,38428
+38105,Uptown - Pinch District,Pinch District,69.82,36980
+38127,Frayser,Frayser,62.83,37886
+38109,Coro Lake - White Haven,Coro Lake,62.71,42657
+38107,North Memphis - Snowden - New Chicago,North Memphis,57.46,40915
+38116,Whitehaven,Whitehaven,57.45,52128
+38118,Oakville - Parkway Village,Parkway Village,52.71,42729
+38115,Hickory Ridge,Hickory Ridge,51.75,41984
+38066,Rossville,Rossville,50.00,49159
+38128,Egypt - Raleigh,Raleigh,48.89,50947
+38112,Midtown - Evergreen - Overton Square - Binghampton - Green Meadows,Midtown,48.68,52735
+38111,East Memphis - Colonial Yorkshire,East Memphis,47.97,54524
+38122,Berclair - Highland Heights,Berclair,47.86,56312
+38104,East Midtown - Central Gardens - Cooper Young - Belleair Woods - Lenox,East Midtown,42.72,58100
+38134,Bartlett,Bartlett,40.54,59888
+38141,South Riverdale,South Riverdale,37.83,61676
+38133,Bartlett,Bartlett,32.30,63464
+38103,Downtown Memphis - South Main Arts District - South Bluffs,Downtown Memphis,29.29,65252
+38060,Oakland,Oakland,27.62,67041
+38016,Cordova,Cordova,26.28,68829
+38119,East Memphis - Fountain Square - Kirby Trace,East Memphis,26.07,70617
+38117,East Memphis - Colonial Yorkshire,East Memphis,25.42,72405
+38135,Bartlett - Ellendale,Bartlett,24.40,74193
+38125,Windyke - Southwind,Windyke,22.34,75981
+38002,Lakeland - Arlington - Brunswick,Lakeland,21.16,77769
+38120,East Memphis - Kirby - White Station,East Memphis,20.22,79557
+38018,Cordova - Shelby Farms,Shelby Farms,19.65,81346
+38028,Hickory Withe - Eads,Eads,19.29,83134
+38138,Germantown,Germantown,17.55,84922
+38017,Collierville - Piperton,Collierville,15.05,86710
+38139,Germantown,Germantown,11.64,88498
