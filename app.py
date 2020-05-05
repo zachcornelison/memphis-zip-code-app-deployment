@@ -122,7 +122,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
 ###############################################################
             html.Div([
                 html.Footer(children='Created by Zach Cornelison', style={
-                    'margin-top': 40,
+                    'margin-top': 100,
                     'backgroundColor': 'black',
                     'color': 'white',
                     'font-size': 8,
