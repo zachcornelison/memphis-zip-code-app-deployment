@@ -73,7 +73,7 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
             dcc.Dropdown(
                 id='demo-dropdown',
                 options=[{'label': i, 'value': i} for i in df['Zip Code']],
-                value='null',
+                value=['38126', '38139'],
                 multi=True
             ),
         html.Div(id='dd-output-container')]),
@@ -96,10 +96,6 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                 )
             ], className='six columns'
             ),
-###############################################################              
-            html.Div(children='', style={
-                'padding': 250
-            }),
 ###############################################################
             html.Div([
                dash_table.DataTable(
@@ -120,28 +116,29 @@ app.layout = html.Div(style={'backgroundColor': colors['background']}, children=
                         {
                             'if': {'column_id': c},
                             'textAlign': 'left'
-                        } for c in ['Zip Code', 'Area Name']
+                        } for c in ['Zip Code', 'Area Name', 'Short Name']
                     ]),
             ], className='twelve columns'),
 ###############################################################
-            html.Div(children='', style={
-                'padding': 250
-            }),
-###############################################################
-            html.Footer(children='Created by Zach Cornelison', style={
-                'backgroundColor': 'black',
-                'color': 'white',
-                'font-size': 8,
-                'width': '100%',
-                'textAlign': 'center'
-            }),
-            html.Footer([html.A('Github', href='https://github.com/zachcornelison', target="_blank")], style={
-                'backgroundColor': 'black',
-                'color': 'white',
-                'font-size': 8,
-                'width': '100%',
-                'textAlign': 'center'
-            })
+            html.Div([
+                html.Footer(children='Created by Zach Cornelison', style={
+                    'margin-top': 40,
+                    'backgroundColor': 'black',
+                    'color': 'white',
+                    'font-size': 8,
+                    'width': '100%',
+                    'textAlign': 'center'
+                }),
+                html.Footer([html.A('Github Repository', 
+                                    href='https://github.com/zachcornelison/Memphis-Zipcode-Data-Dashboardn', 
+                                    target="_blank")], style={
+                    'backgroundColor': 'black',
+                    'color': 'white',
+                    'font-size': 8,
+                    'width': '100%',
+                    'textAlign': 'center'
+                })
+            ], className='twelve columns'),
 ###############################################################  
         ], className='row')
     ], className='ten columns offset-by-one'),    
